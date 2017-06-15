@@ -28,22 +28,22 @@ Override the `objectSelector` to match a DOM element within your component.
 
 You can then override the following methods to handle different keyboard interactions
 
-# onEnterPress
+### onEnterPress
 
 Handles a press of the `Enter` key.
 
-# onEscPress
+### onEscPress
 
 Handles a press of the `Esc` key.
 
-# onUpPress
+### onUpPress
 
 Handles a press of the `Up` key.
 
-# onDownPress
+### onDownPress
 
 Handles a press of the `Down` key.
 
-# onCustomPress(keyNum)
+### onCustomPress(keyNum)
 
 Handles a press of any other key. Use the `keyNum` argument to find which key was pressed.
