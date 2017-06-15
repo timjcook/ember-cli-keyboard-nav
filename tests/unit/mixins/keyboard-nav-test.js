@@ -21,7 +21,7 @@ test('it triggers onEnterPress when the enter key is pressed', function(assert) 
 
   subject.$ = {
     find(selector) {
-      assert.equal(selector, subject.get('inputSelector'), 'it should pass in the correct input selector');
+      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
       return {
         keyup(callback) {
           callback(keypressEvent);
@@ -48,7 +48,7 @@ test('it triggers onEscPress when the esc key is pressed', function(assert) {
 
   subject.$ = {
     find(selector) {
-      assert.equal(selector, subject.get('inputSelector'), 'it should pass in the correct input selector');
+      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
       return {
         keyup(callback) {
           callback(keypressEvent);
@@ -75,7 +75,7 @@ test('it triggers onDownPress when the down key is pressed', function(assert) {
 
   subject.$ = {
     find(selector) {
-      assert.equal(selector, subject.get('inputSelector'), 'it should pass in the correct input selector');
+      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
       return {
         keyup(callback) {
           callback(keypressEvent);
@@ -102,7 +102,7 @@ test('it triggers onUpPress when the up key is pressed', function(assert) {
 
   subject.$ = {
     find(selector) {
-      assert.equal(selector, subject.get('inputSelector'), 'it should pass in the correct input selector');
+      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
       return {
         keyup(callback) {
           callback(keypressEvent);
@@ -129,7 +129,7 @@ test('it triggers onCustomPress when any other button key is pressed', function(
 
   subject.$ = {
     find(selector) {
-      assert.equal(selector, subject.get('inputSelector'), 'it should pass in the correct input selector');
+      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
       return {
         keyup(callback) {
           callback(keypressEvent);

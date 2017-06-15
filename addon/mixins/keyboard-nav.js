@@ -4,10 +4,10 @@ const { Mixin } = Ember;
 
 export default Mixin.create({
 
-  inputSelector: 'input',
+  objectSelector: 'input',
 
   didInsertElement() {
-    this.$.find(this.get('inputSelector')).keyup((e) => {
+    this.$.find(this.get('objectSelector')).keyup((e) => {
       if(e.which === 13) {
         this.onEnterPress();
       } else if(e.which === 27) {
