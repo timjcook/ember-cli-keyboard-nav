@@ -1,27 +1,49 @@
 # ember-cli-keyboard-nav
 
-This README outlines the details of collaborating on this Ember addon.
+A wrapper for binding a keyup event to a jQuery element and handling the actions with a simple interface.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-keyboard-nav`
-* `npm install`
-* `bower install`
+* `ember install ember-cli-keyboard-nav`
 
-## Running
+## Using the mixin
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Add the mixin an Ember component by importing it with
 
-## Running Tests
+```
+import KeyboardNavMixin from 'ember-cli-keyboard-nav/mixins/keyboard-nav';
+```
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+and applying the mixin to your component, eg.
 
-## Building
+```
+export default Ember.Component.extend(KeyboardNavMixin, {
+  ...
+});
+```
 
-* `ember build`
+## Using the mixin
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+Override the `objectSelector` to match a DOM element within your component.
+
+You can then override the following methods to handle different keyboard interactions
+
+# onEnterPress
+
+Handles a press of the `Enter` key.
+
+# onEscPress
+
+Handles a press of the `Esc` key.
+
+# onUpPress
+
+Handles a press of the `Up` key.
+
+# onDownPress
+
+Handles a press of the `Down` key.
+
+# onCustomPress(keyNum)
+
+Handles a press of any other key. Use the `keyNum` argument to find which key was pressed.
