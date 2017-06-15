@@ -19,15 +19,13 @@ test('it triggers onEnterPress when the enter key is pressed', function(assert) 
     assert.ok(true, 'it should fire the onEnterPress method');
   };
 
-  subject.$ = {
-    find(selector) {
-      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
-      return {
-        keyup(callback) {
-          callback(keypressEvent);
-        }
+  subject.$ = (selector) => {
+    assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
+    return {
+      keyup(callback) {
+        callback(keypressEvent);
       }
-    }
+    };
   };
 
   subject.didInsertElement();
@@ -46,15 +44,13 @@ test('it triggers onEscPress when the esc key is pressed', function(assert) {
     assert.ok(true, 'it should fire the onEscPress method');
   };
 
-  subject.$ = {
-    find(selector) {
-      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
-      return {
-        keyup(callback) {
-          callback(keypressEvent);
-        }
+  subject.$ = (selector) => {
+    assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
+    return {
+      keyup(callback) {
+        callback(keypressEvent);
       }
-    }
+    };
   };
 
   subject.didInsertElement();
@@ -73,15 +69,13 @@ test('it triggers onDownPress when the down key is pressed', function(assert) {
     assert.ok(true, 'it should fire the onDownPress method');
   };
 
-  subject.$ = {
-    find(selector) {
-      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
-      return {
-        keyup(callback) {
-          callback(keypressEvent);
-        }
+  subject.$ = (selector) => {
+    assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
+    return {
+      keyup(callback) {
+        callback(keypressEvent);
       }
-    }
+    };
   };
 
   subject.didInsertElement();
@@ -100,15 +94,13 @@ test('it triggers onUpPress when the up key is pressed', function(assert) {
     assert.ok(true, 'it should fire the onUpPress method');
   };
 
-  subject.$ = {
-    find(selector) {
-      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
-      return {
-        keyup(callback) {
-          callback(keypressEvent);
-        }
+  subject.$ = (selector) => {
+    assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
+    return {
+      keyup(callback) {
+        callback(keypressEvent);
       }
-    }
+    };
   };
 
   subject.didInsertElement();
@@ -127,15 +119,13 @@ test('it triggers onCustomPress when any other button key is pressed', function(
     assert.ok(true, 'it should fire the onCustomPress method');
   };
 
-  subject.$ = {
-    find(selector) {
-      assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
-      return {
-        keyup(callback) {
-          callback(keypressEvent);
-        }
+  subject.$ = (selector) => {
+    assert.equal(selector, subject.get('objectSelector'), 'it should pass in the correct input selector');
+    return {
+      keyup(callback) {
+        callback(keypressEvent);
       }
-    }
+    };
   };
 
   subject.didInsertElement();

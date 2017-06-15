@@ -7,7 +7,7 @@ export default Mixin.create({
   objectSelector: 'input',
 
   didInsertElement() {
-    this.$.find(this.get('objectSelector')).keyup((e) => {
+    this.$(this.get('objectSelector')).keyup((e) => {
       if(e.which === 13) {
         this.onEnterPress();
       } else if(e.which === 27) {
