@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-keyboard-nav",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easy dropdown menu keyboard navigation for Ember.",
   "keywords": [
     "ember-addon",
