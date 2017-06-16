@@ -22,9 +22,13 @@ export default Ember.Component.extend(KeyboardNavMixin, {
 });
 ```
 
-## Using the mixin
+explicitly include it in your component's `didInsertElement` hook, passing in the jQuery object that you want to bind the keyboard actions to.
 
-Override the `objectSelector` to match a DOM element within your component.
+```
+didInsertElement() {
+  this.bindKeys($('input.my-input');
+}
+```
 
 You can then override the following methods to handle different keyboard interactions
 
