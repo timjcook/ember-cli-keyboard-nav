@@ -1,5 +1,7 @@
 # ember-cli-keyboard-nav
 
+[![Build Status](https://travis-ci.org/timjcook/ember-cli-keyboard-nav.svg?branch=master)](https://travis-ci.org/timjcook/ember-cli-keyboard-nav)
+
 A wrapper for binding a keyup event to a jQuery element and handling the actions with a simple interface.
 
 ## Installation
@@ -51,3 +53,7 @@ Handles a press of the `Down` key.
 ### onCustomPress(keyNum)
 
 Handles a press of any other key. Use the `keyNum` argument to find which key was pressed.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
