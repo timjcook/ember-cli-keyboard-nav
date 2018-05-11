@@ -1,5 +1,7 @@
 # ember-cli-keyboard-nav
 
+[![Build Status](https://travis-ci.org/timjcook/ember-cli-keyboard-nav.svg?branch=master)](https://travis-ci.org/timjcook/ember-cli-keyboard-nav)
+
 A wrapper for binding a keyup event to a jQuery element and handling the actions with a simple interface.
 
 ## Installation
