@@ -51,3 +51,7 @@ Handles a press of the `Down` key.
 ### onCustomPress(keyNum)
 
 Handles a press of any other key. Use the `keyNum` argument to find which key was pressed.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
